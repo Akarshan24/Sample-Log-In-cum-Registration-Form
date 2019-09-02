@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sample</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="loginpage">
+        <div class="form">
+            <form class="register-form">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" placeholder="Email ID" required>
+                <i class="fa fa-eye" id="eye"></i>
+                <input type="password" placeholder="Password" id="pwd" required>
+                <button>Create Account</button>
+                <p class="msg">Already a Member?<a href="#">Login</a></p>
+            </form>
+            <form class="login-form" onsubmit="return validate_log()">
+                <input type="text" placeholder="Username or Email ID">
+
+                <input type="password" placeholder="Password" id="pwd2">
+                <button type="submit">Login</button>
+                <p class="msg">Not a Member?<a href="#">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.msg a').click(function() {
+            $('form').animate({
+                height: "toggle",
+                opacity: "toggle"
+            }, "slow");
+        });
+        var pwd = document.getElementById("pwd");
+        var pwd2 = document.getElementById("pwd2");
+        var eye = document.getElementById("eye");
+        var eye2 = document.getElementById("eye2");
+        eye.addEventListener('click', () => {
+            eye.classList.toggle('active');
+            if (pwd.type == 'password')
+                pwd.type = 'text';
+            else
+                pwd.type = 'password';
+        });
+    </script>
+</body>
+
+</html>

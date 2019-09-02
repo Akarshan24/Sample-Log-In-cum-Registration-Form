@@ -1,0 +1,91 @@
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img2.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.loginpage {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #ffffff00;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    outline: 1;
+    background: #f3f3f3;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #8b898900;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #4caf50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.form button:hover,
+.form button:active {
+    background: #4caf50;
+    width: 100%;
+    opacity: 1;
+}
+
+.form input:focus {
+    opacity: 1;
+}
+
+.form .msg {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 15px;
+    cursor: default;
+}
+
+.form .msg a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.fa {
+    position: absolute;
+    left: 290px;
+    top: 183px;
+    cursor: pointer;
+    color: #000000;
+    z-index: 99;
+}
+
+.fa.active {
+    color: dodgerblue;
+    z-index: 99;
+}
